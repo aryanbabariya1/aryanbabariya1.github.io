@@ -1,0 +1,7 @@
+.next
+out
+.env
+package.lock
+yarn.lock
+drafts
+sitemap.xml
