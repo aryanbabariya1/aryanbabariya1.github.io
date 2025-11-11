@@ -1,45 +1,60 @@
-name: Deploy to GitHub Pages
+# .github/workflows/nextjs.yml
+
+name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches:
-      - main # Or whichever branch you want to deploy from
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "16" # Match a version compatible with your project
-          cache: "yarn"
+          node-version: "20"
+          # This cache step now works because you will have a yarn.lock
+          cache: 'yarn'
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+
+      # Install dependencies from the root of the monorepo
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build and Export Next.js app
-        run: yarn --cwd packages/web build && yarn --cwd packages/web export
+      # Build and export the app from within the 'packages/web' directory
+      - name: Build with Next.js
+        run: yarn --cwd packages/web build
 
+      # Upload the exported site from the correct 'out' folder
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: packages/web/out # The folder produced by `next export`
+          path: ./packages/web/out
 
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

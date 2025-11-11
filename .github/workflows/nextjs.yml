@@ -23,27 +23,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # This setup is fine as it installs Node globally
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: 'yarn' # Explicitly set cache to yarn
+          # This cache step now works because you will have a yarn.lock
+          cache: 'yarn'
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
-      
-      # We need to install dependencies from the root of the monorepo
+
+      # Install dependencies from the root of the monorepo
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # CRITICAL CHANGE: Run the build command inside the 'packages/web' directory
+      # Build and export the app from within the 'packages/web' directory
       - name: Build with Next.js
-        run: yarn --cwd packages/web build && yarn --cwd packages/web export
-        
-      # CRITICAL CHANGE: Point the artifact upload to the correct output folder
+        run: yarn --cwd packages/web build
+
+      # Upload the exported site from the correct 'out' folder
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
