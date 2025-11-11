@@ -4,8 +4,16 @@ const withCSS = require('@zeit/next-css')
 const withTM = require('next-transpile-modules')
 const { META } = require('./constants/metadata')
 
+// Add this line
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = withCSS(
   withTM({
+    // New Configuration for GitHub Pages
+    output: 'export',
+    assetPrefix: isProd ? '/personal-website/' : '',
+    basePath: isProd ? '/personal-website' : '',
+
     transpileModules: ['react-flexbox-grid', 'react-syntax-highlighter'],
     webpack(config, { isServer }) {
       if (isServer) {
