@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # This cache step now works because you will have a yarn.lock
           cache: 'yarn'
 
       - name: Setup Pages
@@ -35,15 +34,16 @@ jobs:
         with:
           static_site_generator: next
 
-      # Install dependencies from the root of the monorepo
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # Build and export the app from within the 'packages/web' directory
+      # --- THIS IS THE FIX ---
+      # Add the NODE_OPTIONS environment variable to the build step
       - name: Build with Next.js
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
         run: yarn --cwd packages/web build
 
-      # Upload the exported site from the correct 'out' folder
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
