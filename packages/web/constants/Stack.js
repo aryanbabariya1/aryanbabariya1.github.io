@@ -112,10 +112,256 @@ export const PROJECTS = {
           <span style={{ filter: 'opacity(0.5)' }}>
             <strong>Software Engineer</strong>, August 2023 - Feb 2024
           </span>
-          <br />
+          <br /> Re-established and improved the Airchat Web Client, better Link
+          Previews, helped the app get 2k+ installs via CTA and its accurate
+          tracking, worked with the Java GRPC Backend, owned certain parts of
+          the Airchat iOS app.
         </>
       ),
-    }
+    },
+    {
+      image: 'https://www.deva.me/favicon_384.png',
+      name: 'Deva.me',
+      link: 'https://deva.me/creators',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Founding Engineer</strong>, February - August 2023
+          </span>
+          <br /> We aim to provide everyone a second voice, and create a massive
+          supply of automated representative intellect that shall transcend into
+          new learning experiences for the masses.
+        </>
+      ),
+    },
+    // {
+    //   image:
+    //     'https://media.licdn.com/dms/image/C4E0BAQEHs1C2gRRukA/company-logo_200_200/0/1620129594556?e=2147483647&v=beta&t=OJNnxV2Tz6cwTXmAk_Tm7P-8v7-MlLPsCsd5ugCoxFg',
+    //   name: 'Stealth Startup',
+    //   // link: 'https://app.serendipity.lol',
+    //   description: (
+    //     <>
+    //       <span style={{ filter: 'opacity(0.5)' }}>
+    //         <strong>Consultant & Tech Lead</strong>, March 2023 - Present
+    //       </span>
+    //       <br /> Working (in & from India) with a Web3 + AI startup, with a
+    //       globally operated remote team.
+    //     </>
+    //   ),
+    // },
+    {
+      image: 'https://i.ibb.co/Z8gmths/serendipity.jpg',
+      // width: 100,
+      name: 'Serendipity',
+      // link: '#', // 'https://app.serendipity.lol',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Software Engineer</strong>, August 2022 - Februrary 2023
+          </span>
+          <br /> Serendipity approaches Note Taking in a whole new way, by
+          focusing on People, not just Notes. It is a note-taking app that helps
+          you remember the people you meet, and the things you learn from them,
+          and creates you a beautiful looking network graph.
+          <br />
+          <br />
+          <div
+            style={{
+              position: 'relative',
+              paddingBottom: '64.5933014354067%',
+              height: 0,
+            }}
+          >
+            <iframe
+              title="Serendipity Demo"
+              src="https://www.loom.com/embed/834bd1d633be40689e1b938cbd8bfbae"
+              frameBorder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                borderRadius: 15,
+              }}
+            />
+          </div>
+          <br />
+          Pair coded with my teammate, and shipped the MVP in just 10 days
+          (Next.js + Node.js). It was like a hackathon on steroids. Worked on
+          the entire stack: the frontend, the backend, and all the business
+          logic. Shipped a Mac Desktop App for Serendipity power users.
+          <br /> <br />
+          Worked hardcore, extensively on perfecting the D3.js Advanced Network
+          Graph mechanics. Shipped insanely complex CRDT based collaborative
+          editing using a wide range of technologies.
+        </>
+      ),
+    },
+    {
+      image:
+        'https://pbs.twimg.com/profile_images/1460721641084768260/nbMf9_r1_400x400.jpg',
+      // width: 100,
+      name: 'Monument Labs, Inc.',
+      // link: 'https://monument.app',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Product Manager</strong> &{' '}
+            <strong>Web 3.0 Developer</strong>, December 2021 - August 2022
+          </span>
+          <br /> Monument.app is a Blockchain Start-up, which helps create
+          collections of significant moments within a creator's journey. Each
+          moment is represented by a collectible NFT that can be bought and
+          owned by a creator's closest supporters. Creators share their stories
+          through minting new moments, financially enabling them to pursue their
+          dreams. <br /> <br /> As a Full-stack Web 3.0 Developer, I helped
+          create all the Monument Smart Contracts currently deployed on the
+          Ethereum Mainnet. Wrote and thoroughly tested the Monument ERC721 NFT
+          Contract (got it audited back and forth by professionals), and the
+          Monument Marketplace Contract that supports buying & selling of NFTs
+          and manages its auctions in a secure fashion. <br /> <br /> As a
+          Product Manager, I managed a team of 5 developers working on the
+          Frontend, Backend, Web3 & the Monument iOS App. I brought order in
+          chaotic times, and helped the company ship its MVP in a month using
+          Scrum & Agile methodologies.
+        </>
+      ),
+    },
+    {
+      image: 'https://i.ibb.co/F0hmv9N/Beam-Community.jpg',
+      // width: 100,
+      name: 'Beam Community, Inc.',
+      link: 'https://itsbeam.com',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Founder, Former CEO</strong>, March 2020 - July 2022
+          </span>
+          <br /> <strong>Recent Update:</strong> I found this company when in
+          10th grade, and it has recently got acquired, sold it in July 2022. I
+          no more run this company. <br /> <br /> It is the Substack for SMS. It
+          is a SaaS service that enables companies and creators to connect to
+          their fans via text, and also enables them to earn money via
+          subscriptions. <br /> <br /> Built entire product from start to
+          finish, used tools like React, Node.js, GraphQL, MongoDB, Websocket,
+          Twilio, AWS EC2, AWS SES, Git, Cloudinary on production. <br /> <br />{' '}
+          As a founder, not just managed technical aspects of the company, but
+          also Design UI/UX, Growth, and Product Management.
+        </>
+      ),
+    },
+    {
+      image: 'https://thegenerativepress.com/favicon.ico',
+      // width: 100,
+      name: 'The Generative Press',
+      link: 'https://thegenerativepress.com',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Side-project</strong>, January 2023 - Present
+          </span>
+          <br /> The Generative Press surfs on Twitter and popular news sites,
+          also reads latest tweets by verified citizen journalists to learn
+          about latest happenings live, and then, our very own home-grown AI
+          personalities write the news after gathering all the context. It's
+          automated from beginning to the end. No editorial team, no human
+          intervention, only news. <br /> <br /> Made this with my colleague{' '}
+          <a
+            href="https://twitter.com/dkposts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Daniel
+          </a>
+          at Serendipity in a weekend.
+        </>
+      ),
+    },
+    {
+      image: 'https://judiciaryapp.vercel.app/favicon.ico',
+      // width: 100,
+      name: 'The Judiciary Protocol (judiciary.app)',
+      link: 'https://judiciaryapp.vercel.app',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>DAO Attorney</strong> & <strong>Protocol Architect</strong>,
+            December 2022 - Present
+          </span>
+          <br /> The on-chain contract creation & signing protocol for
+          businesses and individuals, with in-built escrow functionalities where
+          the participants can choose their judge for the escrow wallet. <br />
+          <br /> My team and I created this during the Korea Blockchain Week
+          2022 EthSeoul & Filecoin-Moralis hackathon (won $8k in grants). Teamed
+          up with a consultant from Bankless Consulting to turn this project
+          into something big. <br /> <br /> Worked on the protocol & led the
+          team entirely from idea to execution — Solidity, React, Next.js,
+          Wagmi, Ethers, Chakra UI, on all fronts.
+        </>
+      ),
+    },
+    {
+      image:
+        'https://ph-files.imgix.net/32a6ac11-e7b0-4c3f-82fc-bc92c38dba34?auto=format',
+      name: 'bulk-mail-cli',
+      link: 'https://bulkmail.now.sh',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Maintainer</strong>, December 2018 - March 2020
+          </span>
+          <br /> A command line interface (cli) application that sends automated
+          and dynamic emails to your email list. It recieved thousands of
+          installs on NPM, and a good response on{' '}
+          <a
+            href="https://github.com/AryanBabariya/bulk-mail-cli#readme"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          .
+        </>
+      ),
+    },
+    // {
+    //   image: 'https://i.ibb.co/dPRzYZv/pkgreview-2.jpg',
+    //   name: 'pkgreview.dev',
+    //   link: 'https://pkgreview.vercel.app',
+    //   description: (
+    //     <>
+    //       <span style={{ filter: 'opacity(0.5)' }}>
+    //         <strong>Side-project</strong>, February 2020 - June 2020
+    //       </span>
+    //       <br /> Shipped ALL of it in just SEVEN DAYS. A lot of people find it
+    //       very difficult to decide what NPM Package to use. pkgreview.dev helps
+    //       developers in the JavaScript Community review and analyze each module
+    //       before they start using it. <br /> <br /> I no more maintain this
+    //       project,{' '}
+    //       <strong>pkgreview.dev is now deprecated and abandoned.</strong>
+    //     </>
+    //   ),
+    // },
+    {
+      image: 'https://i.ibb.co/fd2rF97/favicon.jpg',
+      name: 'JoinMyCall',
+      link: 'https://joinmycall.now.sh',
+      description: (
+        <>
+          <span style={{ filter: 'opacity(0.5)' }}>
+            <strong>Side-project</strong>, June 2019 - August 2019
+          </span>
+          <br /> This app makes your colleagues take a connection/camera/mic
+          test before joining a call. Hosts can create infinite JoinMyCall links
+          to invite guests in meeting. Guests can either skip or do the
+          connection test.
+        </>
+      ),
+    },
   ],
 }
 

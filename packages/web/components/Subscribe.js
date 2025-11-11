@@ -6,6 +6,14 @@ import React from 'react'
 // import { META } from '../constants/metadata'
 
 export default function Subscribe() {
+  // const toSubmitEmail = e => {
+  //   e.preventDefault()
+  //   // const email = document.getElementById('paemail').value
+  //   // window.open(`https://propagate.at/share/Aryan/email/${email}`, '_blank')
+  //   window.open('https://buttondown.email/Aryan', 'popupwindow')
+  //   return false
+  // }
+
   return (
     <>
     </>

@@ -39,7 +39,7 @@ const prettier = require('prettier')
 
                 return `
                         <url>
-                            <loc>${`/${route}`}</loc>
+                            <loc>${`https://Aryaneth.com/${route}`}</loc>
                         </url>
                     `
               })

@@ -108,7 +108,16 @@ function Layout({
           muted={false}
         />
       )}
-      
+
+      {/* <img
+        className="about-avatar"
+        src={
+          // `https://pbs.twimg.com/profile_images/1722437909012430848/EZF6BJym_400x400.jpg` ||
+          `https://images.weserv.nl/?url=https://unavatar.io/twitter/${META.social.twitter}`
+        }
+        alt="Avatar"
+      /> */}
+
       <GridBackground />
 
       <div className="top-menu">

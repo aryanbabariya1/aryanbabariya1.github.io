@@ -1,4 +1,4 @@
-const username = 'AryanBabariya'
+const username = 'Aryaneth'
 
 const META = {
   title: 'Aryan Babariya',
@@ -30,7 +30,7 @@ const META = {
   email: 'aryanpersonal0406@gmail.com',
   resume:
     '',
-  githubUrl: 'aryanbabariya1/personal-website',
+  githubUrl: '',
   discordLink: '',
 }
 

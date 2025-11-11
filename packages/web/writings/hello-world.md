@@ -1,5 +1,5 @@
 ---
-title: "Hello World!"
+title: "Hello World"
 date: "2025-10-01"
 og:
   description: ""
@@ -9,4 +9,4 @@ author:
   name: "Aryan Babariya"
 ---
 
-Hello World!
+Hello World

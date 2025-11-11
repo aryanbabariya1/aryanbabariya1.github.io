@@ -102,7 +102,7 @@ Homepage.getInitialProps = async context => {
   return {
     writings,
     data: {
-      title: 'Essays',
+      title: 'Aryan Babariya Essays',
       og: {
         image: META.pageOgs.writings,
       },

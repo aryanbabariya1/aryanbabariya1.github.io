@@ -109,17 +109,6 @@ function Writing({ content, data, slug }) {
                 },
               }}
             />
-
-            <br />
-
-            {/* <div className="card"> */}
-            <Subscribe />
-            {/* </div> */}
-
-            <br />
-            <br />
-
-            <DiscordInviteBox />
           </div>
         </div>
       </Layout>
