@@ -26,24 +26,25 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "20" # Node 20 is fine
           cache: 'yarn'
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
+      # NOTE: We have REMOVED the 'actions/configure-pages' step
+      # It is not compatible with your old Next.js version.
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # --- THIS IS THE FIX ---
-      # Add the NODE_OPTIONS environment variable to the build step
-      - name: Build with Next.js
+      # --- THIS IS THE KEY CHANGE ---
+      # We now run `build` AND `export` to create the `/out` directory.
+      - name: Build and Export Next.js app
         env:
           NODE_OPTIONS: "--openssl-legacy-provider"
-        run: yarn --cwd packages/web build
+        run: |
+          yarn --cwd packages/web build
+          yarn --cwd packages/web export
 
+      # This step will now succeed because the `export` command creates the folder.
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

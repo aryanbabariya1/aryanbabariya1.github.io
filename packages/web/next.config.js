@@ -1,23 +1,19 @@
+// packages/web/next.config.js
 require('dotenv').config()
 
 const withCSS = require('@zeit/next-css')
 const withTM = require('next-transpile-modules')
 const { META } = require('./constants/metadata')
 
-// Add this line
-const isProd = process.env.NODE_ENV === 'production'
-
 module.exports = withCSS(
   withTM({
-    // New Configuration for GitHub Pages
-    output: 'export',
-    assetPrefix: isProd ? '/aryanbabariya1.github.io/' : '',
-    basePath: isProd ? '/aryanbabariya1.github.io' : '',
+    images: {
+      unoptimized: true,
+    },
 
     transpileModules: ['react-flexbox-grid', 'react-syntax-highlighter'],
     webpack(config, { isServer }) {
       if (isServer) {
-        // eslint-disable-next-line global-require
         require('./scripts/generateSitemap')
       }
 
@@ -35,30 +31,6 @@ module.exports = withCSS(
       TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID,
       TWITCH_OAUTH_ID: process.env.TWITCH_OAUTH_ID,
       Aryan_BACKEND_URL: process.env.Aryan_BACKEND_URL,
-    },
-    async redirects() {
-      return [
-        {
-          source: '/twitter',
-          destination: `https://twitter.com/${META.social.twitter}`,
-          permanent: true,
-        },
-        {
-          source: '/linkedin',
-          destination: `https://linkedin.com/in/${META.social.linkedin}`,
-          permanent: true,
-        },
-        {
-          source: '/instagram',
-          destination: `https://instagram.com/${META.social.instagram}`,
-          permanent: true,
-        },
-        {
-          source: '/github',
-          destination: `https://github.com/${META.social.github}`,
-          permanent: true,
-        }
-      ]
     },
   })
 )
