@@ -46,60 +46,10 @@ module.exports = withCSS(
           permanent: true,
         },
         {
-          source: '/youtube',
-          destination: `https://youtube.com/${META.social.youtube}`,
-          permanent: true,
-        },
-        {
           source: '/github',
           destination: `https://github.com/${META.social.github}`,
           permanent: true,
-        },
-        {
-          source: '/twitch',
-          destination: `https://twitch.tv/${META.social.twitch}`,
-          permanent: true,
-        },
-        {
-          source: '/facebook',
-          destination: `https://facebook.com/${META.social.facebook}`,
-          permanent: true,
-        },
-        {
-          source: '/resume',
-          destination: `${META.resume}`,
-          permanent: true,
-        },
-        {
-          source: '/email/:body',
-          destination: `mailto:${META.email}?body=:body`,
-          permanent: true,
-        },
-        {
-          source: '/email',
-          destination: `mailto:${META.email}`,
-          permanent: true,
-        },
-        {
-          source: '/devto',
-          destination: `https://dev.to/${META.social.dev}`,
-          permanent: true,
-        },
-        {
-          source: '/discord',
-          destination: `${META.discordLink}`,
-          permanent: true,
-        },
-        {
-          source: '/schedule',
-          destination: `https://cal.com/Aryaneth`,
-          permanent: true,
-        },
-        {
-          source: '/calendly',
-          destination: `https://cal.com/Aryaneth/chat`,
-          permanent: true,
-        },
+        }
       ]
     },
   })

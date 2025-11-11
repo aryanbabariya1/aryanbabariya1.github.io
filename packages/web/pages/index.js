@@ -48,7 +48,13 @@ function About() {
             <Row>
               <Col md={12}> {ELEMENTS.about} </Col>{' '}
             </Row>{' '}
-            <br /> <br />
+          </div>{' '}
+          <div className="journey-section">
+            <Row>
+              <Col md={12}> {ELEMENTS.journey} </Col>
+            </Row>
+          </div>
+          <div style={{ marginTop: '60px' }}>
             <h2> Moments📸 </h2>{' '}
             <center>
               <Gallery
