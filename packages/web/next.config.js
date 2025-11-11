@@ -11,8 +11,8 @@ module.exports = withCSS(
   withTM({
     // New Configuration for GitHub Pages
     output: 'export',
-    assetPrefix: isProd ? '/personal-website/' : '',
-    basePath: isProd ? '/personal-website' : '',
+    assetPrefix: isProd ? '/aryanbabariya1.github.io/' : '',
+    basePath: isProd ? '/aryanbabariya1.github.io' : '',
 
     transpileModules: ['react-flexbox-grid', 'react-syntax-highlighter'],
     webpack(config, { isServer }) {

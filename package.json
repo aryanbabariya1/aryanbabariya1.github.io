@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "aryanbabariya1.github.io",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -19,7 +19,7 @@
     "test-postinstall": "lerna bootstrap"
   },
   "main": "index.js",
-  "repository": "git@github.com:AryanBabariya/personal-website.git",
+  "repository": "git@github.com:AryanBabariya/aryanbabariya1.github.io.git",
   "author": "Aryan Babariya",
   "license": "MIT",
   "devDependencies": {

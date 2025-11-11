@@ -1,6 +1,6 @@
 # Aryan Babariya
 
-[![Type](https://img.shields.io/badge/type-monorepo-yellow.svg?style=flat-square)](https://github.com/AryanBabariya/personal-website)
+[![Type](https://img.shields.io/badge/type-monorepo-yellow.svg?style=flat-square)](https://github.com/AryanBabariya/aryanbabariya1.github.io)
 [![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/AryanBabariya/Emoji-Log/)
 [![Twitter](https://img.shields.io/twitter/follow/Aryan_Babariya.svg?style=social&label=@Aryan_Babariya)](https://twitter.com/Aryan_Babariya/)
 
@@ -13,8 +13,8 @@ Open Sourced <https://Aryaneth.com>
 - Run
 
 ```bash
-$ git clone https://github.com/AryanBabariya/personal-website # to clone project
-$ cd personal-website # enter in the project
+$ git clone https://github.com/AryanBabariya/aryanbabariya1.github.io # to clone project
+$ cd aryanbabariya1.github.io # enter in the project
 $ yarn # install modules
 $ yarn dev # run development server
 ```
